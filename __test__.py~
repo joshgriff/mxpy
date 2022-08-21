@@ -34,7 +34,7 @@ from MXT.window import *
 ng = normal_gen(0,1)
 wg = window_gen(ng,100)
 pg = plt_gen(wg,'Normal Series')
-hg = hist_gen(pg,100,'Hist Normal')
+hg = hist_gen(pg,'Hist Normal')
 
 for h in hg:
     _=h
