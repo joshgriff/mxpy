@@ -10,6 +10,14 @@ def plt_gen(dg,name):
         plt.pause(.000001)
         yield d 
 
+def plt2_gen(dg,name):
+    for d in dg:
+        plt.figure(name)
+        plt.cla()
+        plt.imshow(d)
+        plt.show(block=False)
+        plt.pause(.000001)
+        yield(d)
 
 
 def hist_gen(wg,N,name):
@@ -21,7 +29,6 @@ def hist_gen(wg,N,name):
         plt.show(block=False)
         plt.pause(.000001)
         yield w
-
 
 
 
